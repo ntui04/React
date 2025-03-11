@@ -7,7 +7,7 @@ const AddNoteModal = ({ modalVisible, setModalVisible, noteText, setNewnote, add
             onRequestClose={() => setModalVisible(false)}>
             <View style={styles.modalOverlay}>
                 <View style={styles.modalContent}>
-                    <Text style={styles.modalTitle}>Add a new note</Text>
+                    <Text style={styles.modalTitle}>{noteText ? 'Edit Note' : 'Add a new note'}</Text>
                     <TextInput style={styles.input}
                         placeholder="Enter note..."
                         placeholderTextColor='#aaa'
